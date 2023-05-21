@@ -1,11 +1,13 @@
 :root {
 
     --turquoise: rgb(174, 217, 217);
-    --green: rgb(124, 181, 178);
+    --green: rgb(148, 195, 189);
     --red: rgb(194, 42, 34);
     --pink: rgb(228, 163, 170);
     --black: #070707;
     --white: #FFFFFF;
+    --ghostwhite: ghostwhite;
+    --max-width: 1700px;
 }
 
 /* Box Model Hack */
@@ -35,13 +37,100 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Cherry Cream Soda', cursive;
 }
 
 body {
-    background-color: var(--black);
+    background-color: var(--ghostwhite);
     color: var(--white);
 }
+
+
+/******************************************
+/* Navigation Section
+/*******************************************/
+
+.navigation-header {
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+    background: var(--green);
+}
+
+.navigation {
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo a img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 10%;
+}
+
+.nav-menu {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-menu a:hover {
+    color: var(--red);
+}
+
+.nav-menu .active {
+    color: var(--red);
+}
+
+
+.hamburger, .close-hamburger{
+    display: none;
+}
+
+.cart {
+    padding: 0 20px;
+    position: relative;
+}
+
+.cart-number {
+    position: absolute;
+    color: var(--red);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.material-symbols-outlined {
+    
+}
+
 
 
 /******************************************
@@ -50,29 +139,34 @@ body {
 
 .hero-container {
     width: 100%;
-    max-width: 1400px;
-    height: 400px;
-    animation: heroBackground 8s infinite;
+    height: 75vh;
+    animation: heroBackground 20s infinite;
+    animation-delay: 0;
 }
 
 @keyframes heroBackground {
     0% {
-        background-image: url(../images/1957-bel-air.webp);
+        background-image: url(../images/1957-chevy-bel-air.webp);
         background-size: cover;
         background-position: center;
     }
-    33.33%{
+    25%{
         background-image: url(../images/1967-ford-mustang.webp);
         background-size: cover;
         background-position: center;
     }
-    66.66% {
+    50% {
         background-image: url(../images/1959-cadillac-eldorado.webp);
         background-size: cover;
         background-position: center;
     }
-    100% {
+    75% {
         background-image: url(../images/1962-lincoln-continental.webp);
+        background-size: cover;
+        background-position: center;
+    }
+    100% {
+        background-image: url(../images/1957-chevy-bel-air.webp);
         background-size: cover;
         background-position: center;
     }
@@ -86,29 +180,189 @@ body {
 
 .hero-text-container {
     height: 100%;
+    max-width: var(--max-width);
+    margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 15px;
     align-items: flex-start;
-    justify-content: center;
-    padding: 15px;
-}
-
-.hero-text-container small {
-    font-size: .8rem;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 15px;
 }
 
 .hero-text-container h1 {
+    font-size: 4.8rem;
+    max-width: 600px;
+    padding-top: 30px;
+}
+
+.hero-text-container small {
     font-size: 2.4rem;
-    width: 200px;
 }
 
 .hero-text-container button {
     font-size: 1.2rem;
-    padding: 8px 16px;
-    background: rgba(0, 0, 0, 0.3);
+    padding: 1.4rem 5.4rem;
+    background: var(--green);
     color: var(--white);
-    border: 1px solid var(--white);
+    border: none;
     outline: none;
-    border-radius: 10px;
+    border-radius: 5px;
+}
+
+.hero-text-container button:hover {
+    background: var(--pink);
+}
+
+/******************************************
+/* Fantastic Four
+/*******************************************/
+
+.f-section {
+    width: 100%;
+    padding: 100px 0;
+}
+
+.fantastic-four {
+    max-width: var(--max-width);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+}
+
+.f-container {
+    width: 800px;
+    height: 47vh;
+    background: red;
+}
+.f-container:nth-of-type(1) {
+    background-image: url(../images/1952-ford-f150.webp);
+    background-size: cover;
+}
+.f-container:nth-of-type(2) {
+    background-image: url(../images/1957-chevrolet-bel-air.webp);
+    background-size: cover;
+}
+.f-container:nth-of-type(3) {
+    background-image: url(../images/1958-chevy-truck.webp);
+    background-size: cover;
+    background-position: bottom;
+}
+.f-container:nth-of-type(4) {
+    background-image: url(../images/1971-ford-bronco.webp);
+    background-size: cover;
+}
+
+.f-container-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    background-image: linear-gradient(to bottom, rgba( 0, 0, 0, 0.05), rgba( 0, 0, 0, 0.6));
+}
+
+.f-text-container {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.f-text-container h3 {
+    font-size: 1.4rem;
+}
+
+.f-text-container p {
+    font-size: 3.2rem;
+    padding-bottom: 30px;
+}
+
+.f-text-container a {
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.f-text-container a:hover {
+    color: var(--green);
+}
+
+/******************************************
+/* Car Shows
+/*******************************************/
+
+.car-show {
+    width: 100%;
+    padding: 100px 0;
+    background: whitesmoke;
+}
+
+.car-show h3 {
+    font-size: 2.8rem;
+    text-align: center;
+    color: var(--red);
+    padding-bottom: 30px;
+}
+
+.car-show-container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.car-show-box {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.car-show-box  img{
+    width: 80%;
+}
+
+.car-show-box  h4{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--red);
+    padding-bottom: 20px;
+}
+
+.car-show-box  button {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white);
+    background: var(--turquoise);
+    padding: 8px 16px;
+    outline: none;
+    border: solid 1px var(--white);
+    border-radius: 4px;
+}
+
+.car-show-box  button:hover {
+    background: var(--pink);
+}
+
+.car-show a {
+    color: var(--green);
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.car-show a:hover {
+    color: var(--pink);
 }

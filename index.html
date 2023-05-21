@@ -4,23 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classic Cars</title>
+
+    <!-- Media tags for social media -->
+    <meta property="og:title" content="King Motors">
+    <meta property="og:description" content="Classic cars for moderen men">
+    <meta property="og:image" content="./images/king-motors-logo.webp">
+    <meta property="og:url" content="https://bmwusa.com">
+    <!-- add icon to tab -->
+    <link rel="icon" type="image/png" href="./images/king-motors-logo.webp" sizes="10x10">
+    <!-- Search Engine-->
+    <meta name="author" content="Stephen Vizzusi">
+        
+    <title>King Motors</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap" rel="stylesheet">
     <link rel="reset" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <header class="navigation-header">
+        <nav class="navigation">
+            <div class="nav-logo">
+                <a href="./index.html">
+                    <img src="./images/king-motors-logo.webp" alt="logo">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a class="active" href="./index.html">Home</a></li>
+                    <li><a href="./index.html#inventory">Inventory</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./index.html#appointment">Appointments</a></li>
+                </ul>
+                <ion-icon class="close-hamburger" name="close-outline"></ion-icon>
+                <ion-icon class="hamburger" name="layers-outline"></ion-icon>
+                <a class="nav-list-btn" href="./contact.html">Contact Us!</a>
+            </div>
+            <div class="cart">
+                <span class="material-symbols-outlined">shopping_cart</span>
+                <span class="cart-number">0</span>
+            </div>
+        </nav>
+    </header>
+
     <main>
         <section class="hero-container">
             <div class="hero-dark-overlay">
                 <div class="hero-text-container">
-                    <small>NEW</small>
-                    <h1>Unique exotic cars delivered to your door</h1>
+                    <h1>CLASSIC CARS FOR THE MODERN DAY MAN</h1>
+                    <small>EXPLORE OUR LINEUP</small>
                     <button>Learn More</button>
                 </div>
             </div>
+        </section>
+
+        <section class="f-section">
+            <section class="fantastic-four">
+                <div class="f-container">
+                    <div class="f-container-overlay">
+                        <article class="f-text-container">
+                            <h3>1952 Ford F150</h3>
+                            <p>Rough and Ready</p>
+                            <a href="#">Learn More</a>
+                        </article>
+                    </div>
+                </div>
+                <div class="f-container">
+                    <div class="f-container-overlay">
+                        <article class="f-text-container">
+                            <h3>1957 Chevrolet Bel Air.</h3>
+                            <p>An American Icon</p>
+                            <a href="#">Learn More</a>
+                        </article>
+                    </div>
+                </div>
+                <div class="f-container">
+                    <div class="f-container-overlay">
+                        <article class="f-text-container">
+                            <h3>1957 Buick</h3>
+                            <p>Old-School Charm</p>
+                            <a href="#">Learn More</a>
+                        </article>
+                    </div>
+                </div>
+                <div class="f-container">
+                    <div class="f-container-overlay">
+                        <article class="f-text-container">
+                            <h3>1971 Ford Bronco</h3>
+                            <p>Off-Road Beast</p>
+                            <a href="#">Learn More</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="car-show">
+            <h3>Choose the car of your dreams</h3>
+            <div class="car-show-container">
+                <div class="car-show-box">
+                    <img src="./images/1962-buick-electra-removebg-preview.png">
+                    <h4>1962 Buick Electra</h4>
+                    <button class="add-cart-button">Add To Cart</button>
+                </div>
+                <div class="car-show-box">
+                    <img src="./images/1957-chevrolet-nomad-removebg-preview.png">
+                    <h4>1957 Chevrolet Nomad</h4>
+                    <button class="add-cart-button">Add To Cart</button>
+                </div>
+                <div class="car-show-box">
+                    <img src="./images/1957-oldsmobile-98-removebg-preview.png">
+                    <h4>1957 Oldsmobile 98</h4>
+                    <button class="add-cart-button">Add To Cart</button>
+                </div>
+                <div class="car-show-box">
+                    <img src="./images/1968-chevrolet-camaro-removebg-preview.png">
+                    <h4>1968 Chevrolet Camero</h4>
+                    <button class="add-cart-button">Add To Cart</button>
+                </div>
+            </div>
+            <a href="#">View Classics Gallery<span class="material-symbols-outlined">fork_right</span></a>
         </section>
     </main>
     <script src="js/main.js" ></script>
