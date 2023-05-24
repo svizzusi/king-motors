@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Media tags for social media -->
+    <meta property="og:title" content="King Motors">
+    <meta property="og:description" content="Classic cars for moderen men">
+    <meta property="og:image" content="./images/king-motors-logo.webp">
+    <meta property="og:url" content="https://bmwusa.com">
+    <!-- add icon to tab -->
+    <link rel="icon" type="image/png" href="./images/king-motors-logo.webp" sizes="10x10">
+    <!-- Search Engine-->
+    <meta name="author" content="Stephen Vizzusi">
+        
+    <title>King Motors: Appointment</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap" rel="stylesheet">
+    <link rel="reset" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/appointment.css">
+</head>
+<body>
+    <header class="navigation-header">
+        <nav class="navigation">
+            <div class="nav-logo">
+                <a href="./index.html">
+                    <img src="./images/king-motors-logo.webp" alt="logo">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a class="active" href="./index.html">Home</a></li>
+                    <li><a href="./inventory.html">Inventory</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./appointment.html">Appointments</a></li>
+                </ul>
+                <ion-icon class="close-hamburger" name="close-outline"></ion-icon>
+                <ion-icon class="hamburger" name="layers-outline"></ion-icon>
+                <a class="nav-list-btn" href="./contact.html">Contact Us!</a>
+            </div>
+            <div class="cart">
+                <span class="material-symbols-outlined">shopping_cart</span>
+                <span class="cart-number">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="appointment-section">
+            <div class="appointment-container">
+                <div class="appointment-form">
+                    <div>
+                        <h2>Make an Appointment to visit our Showroom</h2>
+                        <small>Indulge in the splendor of our showroom, showcasing a remarkable fleet of classic cars yearning to become cherished additions to your collection. To arrange a visit, kindly complete the form below, and our dedicated team will be delighted to assist you.</small>
+                        <form class="appointment-form-box">
+                            <label>
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </label>
+                            <label>
+                                <input type="tel" name="number" placeholder="Phone Number" required>
+                            </label>
+                            <label>
+                                <input type="email" name="email" placeholder="Enter your Email" required>
+                            </label>
+                            <label>Date<br>
+                                <input type="date" name="date" required>
+                            </label>
+                            <label>time<br>
+                                <input type="time" name="time" required>
+                            </label>
+                            <textarea class="appointment-text-area" placeholder="(Optional)"></textarea>
+                            <button type="submit" class="btn-submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <section class="appointment-image-section">
+                    <p>Step into our car dealership and behold a stunning fleet of classic cars, exuding timeless elegance and unmatched craftsmanship. Each vehicle tells a unique story, inviting you to embark on a nostalgic journey through automotive history. Available for sale, these treasures await their passionate owners.</p>
+                </section>
+            </div>
+        </section>
+    </main>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/main.js" ></script>
+</body>
+</html>

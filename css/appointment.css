@@ -1,0 +1,114 @@
+
+/******************************************
+/* Appointment Section
+/*******************************************/
+
+.appointment-section {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.appointment-container {
+    width: 100%;
+    max-width: var(--max-width);
+    height: 75vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.appointment-form {
+    width: 39%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 50px;
+    padding: 50px 120px;
+    margin: 50px;
+    border: 1px solid var(--pink);
+    border-radius: 8px;
+}
+
+.appointment-form h2 {
+    font-size: 2.2rem;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.appointment-form small {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: var(--black);
+}
+
+.appointment-form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.appointment-form-box label {
+    color: var(--black);
+    width: 100%;
+}
+
+.appointment-form-box label input {
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--black);
+    width: 100%;
+}
+
+.appointment-text-area  {
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--black);
+    width: 100%;
+}
+
+.btn-submit {
+    background: var(--green);
+    color: var(--ghostwhite);
+    outline: none;
+    border: 1px solid var(--ghostwhite);
+    border-radius: 8px;
+    padding: 12px 20px;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background: var(--pink);
+}
+
+.appointment-image-section {
+    width: 59%;
+    height: 100%;
+    background-image: url(../images/1962-lincoln-continental.webp);
+    background-size: cover;
+    background-position: left;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.appointment-image-section p {
+    font-size: 1.4rem;
+    color: var(--whitesmoke);
+    font-weight: 200;
+    text-align: justify;
+    width: 80%;
+    background: rgba(0,0,0,0.1);
+    padding: 15px 40px;
+}

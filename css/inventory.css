@@ -1,0 +1,297 @@
+
+/******************************************
+/* Invatory Section
+/*******************************************/
+
+.invatory-hero {
+    width: 100%;
+}
+
+.invatory-hero-container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    gap: 2%;
+}
+
+.invatory-hero-text {
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 50px;
+    border: 1px solid var(--pink);
+    padding: 20px;
+    margin: 50px;
+    border-radius: 8px;
+}
+
+.invatory-hero-text h1 {
+    font-size: 4.4rem;
+    color: var(--black);
+    padding: 10px 0;
+}
+
+.invatory-hero-text p {
+    font-size: 1.4rem;
+    color: var(--black);
+    padding: 10px 0;
+}
+
+.invatory-hero-image-container {
+    width: 59%;
+}
+
+.inventory-hero-image {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.inventory {
+    width: 100%;
+}
+
+.inventory-container {
+    width: 100%;
+    height: 550px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+.inventory-imgage-container {
+    width: 64%;
+    height: 100%;
+}
+/* inventory image effects */
+.imc1 {
+    background-image: url(../images/1952-ford-f150-removebg-preview.webp);
+    background-position: 50% 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+}
+
+.imc1:hover {
+    background-image: url(../images/1952-ford-f150.webp);
+}
+.imc2 {
+    background-image: url(../images/1957-buick-removebg-preview.webp);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+}
+
+.imc2:hover {
+    background-image: url(../images/1957-buick.webp);
+}
+.imc3 {
+    background-image: url(../images/1957-chevrolet-bel-air-removebg-preview.webp);
+    background-position: 50% 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+}
+
+.imc3:hover {
+    background-image: url(../images/1957-chevrolet-bel-air.webp);
+}
+.imc4 {
+    background-image: url(../images/1957-chevrolet-nomad-removebg-preview.webp);
+    background-position: 50% 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+}
+
+.imc4:hover {
+    background-image: url(../images/1957-chevrolet-nomad.webp);
+}
+.imc5 {
+    background-image: url(../images/1957-chevy-bel-air-removebg-preview.webp);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+}
+
+.imc5:hover {
+    background-image: url(../images/1957-chevy-bel-air.webp);
+}
+.imc6 {
+    background-image: url(../images/1957-chrysler-300-removebg-preview.webp);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+}
+
+.imc6:hover {
+    background-image: url(../images/1957-chrysler-300.webp);
+}
+.imc7 {
+    background-image: url(../images/1957-oldsmobile-98-removebg-preview.webp);
+    background-position: 50% 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+}
+
+.imc7:hover {
+    background-image: url(../images/1957-oldsmobile-98.webp);
+}
+.imc8 {
+    background-image: url(../images/1958-chevy-truck-removebg-preview.webp);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+}
+
+.imc8:hover {
+    background-image: url(../images/1958-chevy-truck.webp);
+}
+.imc9 {
+    background-image: url(../images/1959-cadillac-eldorado-removebg-preview.webp);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+}
+
+.imc9:hover {
+    background-image: url(../images/1959-cadillac-eldorado.webp);
+}
+.imc10 {
+    background-image: url(../images/1962-buick-electra-removebg-preview.webp);
+    background-position: 50% 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+}
+
+.imc10:hover {
+    background-image: url(../images/1962-buick-electra.webp);
+}
+.imc11 {
+    background-image: url(../images/1962-lincoln-continental-removebg-preview.webp);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+}
+
+.imc11:hover {
+    background-image: url(../images/1962-lincoln-continental.webp);
+}
+.imc12 {
+    background-image: url(../images/1964-chevrolet-impala-removebg-preview.webp);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+}
+
+.imc12:hover {
+    background-image: url(../images/1964-chevrolet-impala.webp);
+}
+.imc13 {
+    background-image: url(../images/1967-ford-mustang-removebg-preview.webp);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+}
+
+.imc13:hover {
+    background-image: url(../images/1967-ford-mustang.webp);
+}
+.imc14 {
+    background-image: url(../images/1968-chevrolet-camaro-removebg-preview.webp);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+}
+
+.imc14:hover {
+    background-image: url(../images/1968-chevrolet-camaro.webp);
+}
+.imc15 {
+    background-image: url(../images/1970-road-runner-removebg-preview.webp);
+    background-position: 50% 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+}
+
+.imc15:hover {
+    background-image: url(../images/1970-road-runner.webp);
+}
+.imc16 {
+    background-image: url(../images/1971-ford-bronco-removebg-preview.webp);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease-in-out;
+}
+
+.imc16:hover {
+    background-image: url(../images/1971-ford-bronco.webp);
+}
+
+.inventory-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.inventory-details {
+    width: 34%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid var(--pink);
+    margin: 50px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.inventory-details h2 {
+    font-size: 2.4rem;
+    color: var(--black);
+    padding: 10px 0;
+}
+
+.inventory-details p {
+    font-size: 1.4rem;
+    color: var(--black);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--black);
+}
+
+.inventory-details small{
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 20px 0;
+}
+
+.inventory-details button{
+    font-size: 1.4rem;
+    color: var(--white);
+    background: var(--green);
+    padding: 8px 16px;
+    border: 1px solid var(--white);
+    border-radius: 8px;
+}
+
+.inventory-details button:hover{
+    background: var(--pink);
+}
