@@ -1,0 +1,125 @@
+.checkout-main {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    gap: 2%;
+    height: 800px;
+}
+
+.checkout-section {
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--pink);
+    border-radius: 8px;
+}
+
+.checkout-section h1 {
+    font-size: 2.2rem;
+    color: var(--black);
+}
+
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.checkout-form {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    width: 100%;
+}
+
+.checkout-form label {
+    color: var(--black);
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.checkout-form label:nth-of-type(1) {
+    width: 49%;
+}
+
+.checkout-form label:nth-of-type(2) {
+    width: 49%;
+}
+
+.checkout-form label:nth-of-type(4) {
+    width: 68%;
+}
+
+.checkout-form label:nth-of-type(5) {
+    width: 14%;
+}
+
+.checkout-form label:nth-of-type(6) {
+    width: 14%;
+}
+
+.checkout-form label input {
+    background: none;
+    padding: 8px;
+    outline: none;
+    border: 1px solid var(--black);
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.btn-submit {
+    background: var(--green);
+    color: var(--ghostwhite);
+    outline: none;
+    margin-top: 20px;
+    border: 1px solid var(--ghostwhite);
+    padding: 8px 20px;
+    border-radius: 8px;
+    width: 70%;
+}
+
+.btn-submit:hover {
+    background: var(--pink);
+}
+
+.checkout-image-container {
+    width: 59%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.checkout-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.checkout-image-text {
+    position: absolute;
+    z-index: 5;
+    background: rgba(0,0,0,0.1);
+    bottom: 5%;
+    left: 5%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkout-car {
+    font-size: 2.2rem;
+}
+
+.checkout-price {
+    font-size: 1.6rem;
+}
