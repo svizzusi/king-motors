@@ -50,7 +50,7 @@ const cars = [
     },
     {
         image: "./images/1958-chevy-truck.webp",
-        name: '1958 Chevrolet Truck',
+        name: '1958 Chevrolet Apache',
         details: 'The 1958 Chevrolet Truck embodies rugged versatility and classic American design, with its robust construction, distinctive grille, and enduring presence on and off the road, capturing the essence of vintage truck heritage.',
         price: 30000,
         carNumber: 8
@@ -97,8 +97,7 @@ const cars = [
         price: 70000,
         carNumber: 14
     },
-    {
-        
+    {  
         image: "./images/1970-road-runner.webp",
         name: '1970 Plymouth Road Runner',
         details: 'The 1970 Plymouth Road Runner stands as a legendary muscle car, characterized by its bold design, powerful performance, and unmistakable "beep-beep" charm, representing the pinnacle of American automotive muscle and raw driving excitement.',
@@ -111,7 +110,48 @@ const cars = [
         details: 'The 1971 Ford Bronco represents the rugged spirit of adventure, with its versatile design, capable off-road performance, and timeless charm, solidifying its place as an iconic and beloved SUV in automotive history.',
         price: 50000,
         carNumber: 16
-
-    },
+    }
  
 ]
+
+// inventory varibles 
+
+let carNames = document.querySelectorAll('.car-name')
+let carDetails = document.querySelectorAll('.car-details')
+let carPrices = document.querySelectorAll('.car-price')
+let buyCars = document.querySelectorAll('.buy-car')
+
+// checkout varibles
+
+let checkOutImage = document.querySelectorAll('.checkout-image')
+let checkOutCar = document.querySelectorAll('.checkout-car')
+let checkOutPrice = document.querySelectorAll('.checkout-price')
+
+
+
+const displayCars = cars.map((car, index) => {
+    const inventoryCarNames = carNames[index]
+    const inventoryCarDetails = carDetails[index]
+    const inventoryCarPrices = carPrices[index]
+    inventoryCarNames.innerText = car.name
+    inventoryCarDetails.innerText = car.details
+    inventoryCarPrices.innerText = '$' + car.price
+})
+
+function callFunction () {
+    let fruits = ['mango', 'papaya', 'banana']
+    fruits.map((fruit, index) => {
+        localStorage.setItem(`fruits${index + 1}`, fruit);
+        console.log(fruit)
+    })
+    
+}
+
+callFunction()
+
+
+function hollerBack () {
+    let mangoGetter = localStorage.getItem('fruits3')
+    console.log(mangoGetter)
+}
+hollerBack()

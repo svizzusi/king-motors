@@ -233,7 +233,6 @@ body {
 .f-container {
     width: 800px;
     height: 47vh;
-    background: red;
 }
 .f-container:nth-of-type(1) {
     background-image: url(../images/1952-ford-f150.webp);
@@ -336,7 +335,7 @@ body {
     padding-bottom: 20px;
 }
 
-.car-show-box  button {
+.add-cart-button {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--white);
@@ -345,13 +344,14 @@ body {
     outline: none;
     border: solid 1px var(--white);
     border-radius: 4px;
+    text-decoration: none;
 }
 
-.car-show-box  button:hover {
+.add-cart-button:hover {
     background: var(--pink);
 }
 
-.car-show a {
+.car-show > a {
     color: var(--green);
     font-size: 1.8rem;
     text-decoration: none;
@@ -364,7 +364,7 @@ body {
     margin-top: 80px;
 }
 
-.car-show a:hover {
+.car-show > a:hover {
     color: var(--pink);
 }
 
