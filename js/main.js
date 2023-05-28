@@ -117,9 +117,10 @@ const cars = [
 
 // checkout variables
 
-let checkOutImage = document.querySelectorAll('.checkout-image')
-let checkOutName = document.querySelectorAll('.checkout-name')
-let checkOutPrice = document.querySelectorAll('.checkout-price')
+let checkOutImage = document.querySelector('.checkout-image')
+let checkOutName = document.querySelector('.checkout-name')
+let checkOutPrice = document.querySelector('.checkout-price')
+let checkOutRemove = document.querySelector('.remove-car')
 
 // inventory variables
 
@@ -127,6 +128,14 @@ let carName = document.querySelectorAll('.car-name')
 let carDetail = document.querySelectorAll('.car-details')
 let carPrice = document.querySelectorAll('.car-price')
 let buyCarBtn = document.querySelectorAll('.buy-car')
+
+// pop-up variables
+
+let submitButton= document.getElementById('button-submit')
+let submitContainer = document.querySelector('.submit-container')
+let closeButton = document.querySelector('.close')
+
+
 
 
 function setSelectedCar (car) {
@@ -145,15 +154,28 @@ buyCarBtn.forEach( (carBtn, index) => {
     })
 })
 
+
 window.addEventListener('load', () => {
     let selectedCarImage = localStorage.getItem('selectedCarImage' )
     let selectedCarName = localStorage.getItem('selectedCarName' )
     let selectedCarPrice = localStorage.getItem('selectedCarPrice' )
+    console.log(selectedCarImage)
     if (selectedCarImage && selectedCarName && selectedCarPrice) {
         checkOutImage.src = selectedCarImage
         checkOutName.innerText = selectedCarName
-        checkOutPrice.innerText = selectedCarPrice
+        checkOutPrice.innerText = '$'+ selectedCarPrice
+        checkOutRemove.style.display = 'block';
+    } else if (!selectedCarImage && !selectedCarName && !selectedCarPrice) {
+        checkOutRemove.style.display = 'none';
     }
+    checkOutRemove.addEventListener ('click', () => {
+        if (selectedCarImage && selectedCarName && selectedCarPrice) {
+            localStorage.removeItem('selectedCarImage')
+            localStorage.removeItem('selectedCarName')
+            localStorage.removeItem('selectedCarPrice')
+            location.reload()
+        }
+    })
 })
 
 const displayCars = cars.map((car, index) => {
@@ -167,7 +189,21 @@ const displayCars = cars.map((car, index) => {
 
 
 
+// on click of the model button, show model
+submitButton.addEventListener('click', function() {
+    submitContainer.style.display = "flex";
+});
 
+// on click of the close button, hide model
+
+closeButton.addEventListener('click', function() {
+    submitContainer.style.display = "none";
+});
+
+// on click of the background it will closes the pop up or modal
+submitContainer.addEventListener('click', function() {
+    submitContainer.style.display = "none";
+});
 
 
 

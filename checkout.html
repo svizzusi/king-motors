@@ -53,7 +53,8 @@
     <main class="checkout-main">
         <section class="checkout-section">
             <div class="checkout-container">
-                <h1>Check Out</h1>
+                <h1>Request This Vehicle</h1>
+                <p>The King's Motors showroom experience - now in your own home. To continue shopping for your King's Classic Car online, please provide some additional information.</p>
                 <form class="checkout-form">
                     <label>First Name <br>
                         <input type="text" name="name" placeholder="First Name">
@@ -82,15 +83,30 @@
                     <label>Email<br>
                         <input type="email" name="email" inputmode="email" placeholder="Email Address">
                     </label>
-                    <input type="submit" class="btn-submit" value="Submit">
+                    <input type="submit" class="btn-submit" id="button-submit" value="Submit">
+                    <p>We respect your privacy. When you submit your contact information, we agree to only contact you in accordance with our Privacy Policy.</p>
+
+                    <section class="submit-container">
+                        <div class="submit-pop-up">
+                            <img src="./images/vintage-fonz.webp" alt="The Fonz">
+                            <div class="pop-up-text">
+                                <h1>Request Submitted</h1>
+                                <p>The Fonz says "Hey, I'm the Fonz. I know everybody."</p>
+                                <span class="close">Close</span>
+                            </div>
+                        </div>
+                    </section>
+
+
                 </form>
             </div>
         </section>
         <section class="checkout-image-container">
-            <img class="checkout-image" src="" alt="">
+            <img class="checkout-image" src="./images/empty-garage.webp" alt="">
             <div class="checkout-image-text">
-                <p class="checkout-name"></p>
-                <p class="checkout-price"></p>
+                <p class="checkout-name">Empty Garage</p>
+                <p class="checkout-price">Please visit our <a href="./inventory.html">inventory page</a> for our current selections</p>
+                <button class="remove-car">Remove Vehicle</button>
             </div>
         </section>
     </main>
