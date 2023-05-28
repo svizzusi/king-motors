@@ -112,46 +112,96 @@ const cars = [
         carNumber: 16
     }
  
-]
+] 
 
-// inventory varibles 
 
-let carNames = document.querySelectorAll('.car-name')
-let carDetails = document.querySelectorAll('.car-details')
-let carPrices = document.querySelectorAll('.car-price')
-let buyCars = document.querySelectorAll('.buy-car')
-
-// checkout varibles
+// checkout variables
 
 let checkOutImage = document.querySelectorAll('.checkout-image')
-let checkOutCar = document.querySelectorAll('.checkout-car')
+let checkOutName = document.querySelectorAll('.checkout-name')
 let checkOutPrice = document.querySelectorAll('.checkout-price')
 
+// inventory variables
+
+let carName = document.querySelectorAll('.car-name')
+let carDetail = document.querySelectorAll('.car-details')
+let carPrice = document.querySelectorAll('.car-price')
+let buyCarBtn = document.querySelectorAll('.buy-car')
 
 
-const displayCars = cars.map((car, index) => {
-    const inventoryCarNames = carNames[index]
-    const inventoryCarDetails = carDetails[index]
-    const inventoryCarPrices = carPrices[index]
-    inventoryCarNames.innerText = car.name
-    inventoryCarDetails.innerText = car.details
-    inventoryCarPrices.innerText = '$' + car.price
+function setSelectedCar (car) {
+    localStorage.setItem('selectedCarImage', car.image)
+    localStorage.setItem('selectedCarName', car.name)
+    localStorage.setItem('selectedCarPrice', car.price)
+}
+
+buyCarBtn.forEach( (carBtn, index) => {
+    carBtn.addEventListener('click', () => {
+        let selectedCar = cars[index]
+        setSelectedCar(selectedCar)
+        checkOutImage.src = selectedCar.image
+        checkOutName.innerText = selectedCar.name
+        checkOutPrice.innerText = selectedCar.price
+    })
 })
 
-function callFunction () {
-    let fruits = ['mango', 'papaya', 'banana']
-    fruits.map((fruit, index) => {
-        localStorage.setItem(`fruits${index + 1}`, fruit);
-        console.log(fruit)
-    })
-    
-}
+window.addEventListener('load', () => {
+    let selectedCarImage = localStorage.getItem('selectedCarImage' )
+    let selectedCarName = localStorage.getItem('selectedCarName' )
+    let selectedCarPrice = localStorage.getItem('selectedCarPrice' )
+    if (selectedCarImage && selectedCarName && selectedCarPrice) {
+        checkOutImage.src = selectedCarImage
+        checkOutName.innerText = selectedCarName
+        checkOutPrice.innerText = selectedCarPrice
+    }
+})
 
-callFunction()
+const displayCars = cars.map((car, index) => {
+    const inventoryCarName = carName[index]
+    const inventoryCarDetail = carDetail[index]
+    const inventoryCarPrice = carPrice[index]
+    inventoryCarName.textContent = car.name
+    inventoryCarDetail.textContent = car.details
+    inventoryCarPrice.textContent = '$' + car.price
+})
 
 
-function hollerBack () {
-    let mangoGetter = localStorage.getItem('fruits3')
-    console.log(mangoGetter)
-}
-hollerBack()
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const carArr = []
+
+// function setCars () {
+//     cars.map((car, index) => {
+//         if (index < 16) {
+//         carArr.push(car.name)
+//     }   })
+// }
+// setCars()
+// console.log(carArr[2])
+
+// function carGallery () {
+//     carArr.map((car, index) => {
+//         localStorage.setItem(`car${index + 1}`, car);
+//         console.log(car)
+//     })
+// }
+// carGallery()
+
+
+// function getCars () {
+//     let getCar = localStorage.getItem('car5')
+//     console.log(getCar)
+// }
+
+// getCars()
