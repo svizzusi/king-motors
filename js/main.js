@@ -92,7 +92,7 @@ const cars = [
     },
     {
         image: "./images/1968-chevrolet-camaro.webp",
-        name: '1968 Chevrolet Camero',
+        name: '1968 Chevrolet Camaro',
         details: 'The 1968 Chevrolet Camaro personifies the golden age of American muscle cars, with its aggressive stance, powerful engines, and iconic styling, cementing its status as an enduring symbol of speed, performance, and automotive excellence.',
         price: 70000,
         carNumber: 14
@@ -129,20 +129,13 @@ let carDetail = document.querySelectorAll('.car-details')
 let carPrice = document.querySelectorAll('.car-price')
 let buyCarBtn = document.querySelectorAll('.buy-car')
 
-// pop-up variables
-
-let submitButton= document.getElementById('button-submit')
-let submitContainer = document.querySelector('.submit-container')
-let closeButton = document.querySelector('.close')
-
-
-
 
 function setSelectedCar (car) {
     localStorage.setItem('selectedCarImage', car.image)
     localStorage.setItem('selectedCarName', car.name)
     localStorage.setItem('selectedCarPrice', car.price)
 }
+
 
 buyCarBtn.forEach( (carBtn, index) => {
     carBtn.addEventListener('click', () => {
@@ -159,7 +152,7 @@ window.addEventListener('load', () => {
     let selectedCarImage = localStorage.getItem('selectedCarImage' )
     let selectedCarName = localStorage.getItem('selectedCarName' )
     let selectedCarPrice = localStorage.getItem('selectedCarPrice' )
-    console.log(selectedCarImage)
+    
     if (selectedCarImage && selectedCarName && selectedCarPrice) {
         checkOutImage.src = selectedCarImage
         checkOutName.innerText = selectedCarName
@@ -189,55 +182,36 @@ const displayCars = cars.map((car, index) => {
 
 
 
-// on click of the model button, show model
-submitButton.addEventListener('click', function() {
-    submitContainer.style.display = "flex";
-});
+
+// pop-up variables
+
+// let submitButton= document.getElementById('button-submit')
+// let submitContainer = document.querySelector('.submit-pop-up-container')
+// let closeButton = document.getElementById('close-button')
+
+// closeButton.addEventListener('click', () => {
+//     submitContainer.style.display = "none";
+//     alert('You have clicked the submit button') 
+// });
+
+// // on click of the background it will closes the pop up or modal
+// submitContainer.addEventListener('click', function() {
+//     submitContainer.style.display = "none";
+// });
+
+
+// // on click of the model button, show model
+// submitButton.addEventListener('click', function() {
+//     submitContainer.style.display = "flex";
+// });
 
 // on click of the close button, hide model
 
-closeButton.addEventListener('click', function() {
-    submitContainer.style.display = "none";
-});
+// closeButton.addEventListener('click', function() {
+//     submitContainer.style.display = "none";
+// });
 
-// on click of the background it will closes the pop up or modal
-submitContainer.addEventListener('click', function() {
-    submitContainer.style.display = "none";
-});
-
-
-
-
-
-
-
-
-
-
-
-// const carArr = []
-
-// function setCars () {
-//     cars.map((car, index) => {
-//         if (index < 16) {
-//         carArr.push(car.name)
-//     }   })
-// }
-// setCars()
-// console.log(carArr[2])
-
-// function carGallery () {
-//     carArr.map((car, index) => {
-//         localStorage.setItem(`car${index + 1}`, car);
-//         console.log(car)
-//     })
-// }
-// carGallery()
-
-
-// function getCars () {
-//     let getCar = localStorage.getItem('car5')
-//     console.log(getCar)
-// }
-
-// getCars()
+// // on click of the background it will closes the pop up or modal
+// submitContainer.addEventListener('click', function() {
+//     submitContainer.style.display = "none";
+// });

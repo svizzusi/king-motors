@@ -15,20 +15,21 @@
     <!-- Search Engine-->
     <meta name="author" content="Stephen Vizzusi">
         
-    <title>King Motors: Contact Us</title>
+    <title>King Motors: Email</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap" rel="stylesheet">
     <link rel="reset" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/email.css">
 </head>
 <body>
     <header class="navigation-header">
         <nav class="navigation">
             <div class="nav-logo">
                 <a href="./index.html">
-                    <img src="./images/king-motors-logo-removebg-preview.png" alt="logo">
+                    <img src="./images/king-motors-logo.webp" alt="logo">
                 </a>
             </div>
             <div class="nav-menu">
@@ -40,7 +41,7 @@
                 </ul>
                 <ion-icon class="close-hamburger" name="close-outline"></ion-icon>
                 <ion-icon class="hamburger" name="layers-outline"></ion-icon>
-                <a class="nav-list-btn active" href="./contact.html">Contact Us!</a>
+                <a class="nav-list-btn" href="./contact.html">Contact Us!</a>
             </div>
             <a class="cart" href="./checkout.html">
                 <span class="material-symbols-outlined">garage</span>
@@ -48,54 +49,36 @@
         </nav>
     </header>
 
-    <section class="contact-section">
-
-        <section class="contact-details">
-            <div class="contact-box">
-                <span class="material-symbols-outlined">mail</span>
-                <div>
-                    <h2>Chat to Us</h2>
-                    <small>Our friendly team is here to help</small>
-                    <span><a href="mailto:kingmotors@gmail.com"></a>kingmotors@gmail.com</span>
+    <main>
+        <section class="email-section">
+            <div class="email-container">
+                <div class="email-form">
+                    <div>
+                        <h2>Stay connected to all things King's Motors</h2>
+                        <small>Don't miss out on the latest innovations, product updates, events, and more. Sign up today to get all the news from King's Motors.</small>
+                        <form class="email-form-box">
+                            <label>
+                                <input type="text" name="name" placeholder="First Name" required>
+                            </label>
+                            <label>
+                                <input type="text" name="name" placeholder="Last Name" required>
+                            </label>
+                            <label>
+                                <input type="tel" name="number" placeholder="Phone Number" required>
+                            </label>
+                            <label>
+                                <input type="email" name="email" placeholder="Enter your Email" required>
+                            </label>
+                            <button type="submit" class="btn-submit">Sign up</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="contact-box">
-                <span class="material-symbols-outlined">location_on</span>
-                <div>
-                    <h2>Office</h2>
-                    <small>Come say hello at our office HQ</small>
-                    <address>3524 10th Ave S, Great Falls, MT 59405</address>
-                </div>
-            </div>
-            <div class="contact-box">
-                <span class="material-symbols-outlined">call</span>
-                <div>
-                    <h2>Phone</h2>
-                    <small>Mon-Fri from 8am-5pm.</small>
-                    <span><a href="tel">(800)555-5555</a></span>
-                </div>
-            </div>
-
-            <div class="contact-social">
-                <ion-icon name="logo-facebook"></ion-icon>
-                <ion-icon name="logo-twitter"></ion-icon>
-                <ion-icon name="logo-linkedin"></ion-icon>
-                <ion-icon name="logo-youtube"></ion-icon>
-                <ion-icon name="logo-instagram"></ion-icon>
+                <section class="email-image-section">
+                    <p>Step into our classic car dealership and prepare to be amazed by an extraordinary array of vintage automobiles that effortlessly blend timeless style with American craftsmanship. Each car has its own unique story, inviting you to take a nostalgic journey through the rich history of American automotive culture. These remarkable treasures are available for sale, eagerly waiting for passionate individuals like yourself to become their proud new owners.</p>
+                </section>
             </div>
         </section>
-        <section class="contact-map">
-            <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12533845.880674772!2d-115.51536849950749!3d39.91854698503599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53423704c8ca76b7%3A0x2edb8169667a13ae!2sKing%20Motors!5e0!3m2!1sen!2sus!4v1684871456309!5m2!1sen!2sus" 
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-        </section>
-    </section>
+    </main>
     <footer class="footer">
         <section class="top-footer-section">
             <div class="top-footer-container1">
@@ -126,7 +109,6 @@
             </div>
         </section>
     </footer>
-
 
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

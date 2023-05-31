@@ -45,7 +45,6 @@
             </div>
             <a class="cart" href="./checkout.html">
                 <span class="material-symbols-outlined">garage</span>
-                <span class="cart-number cart-active">!</span>
             </a>
         </nav>
     </header>
@@ -238,18 +237,48 @@
             </div>
         </section>
     </main>
-
-
-
-
-
-
-
-
-
-
+    <footer class="footer">
+        <section class="top-footer-section">
+            <div class="top-footer-container1">
+                <div class="footer-logo">
+                    <img src="./images/king-motors-logo-removebg-preview.png" alt="logo">
+                </div>
+                <div class="footer-contacts">
+                    <a href="mailto:kingmotors@email.com">kingmotors@email.com</a>
+                    <a href="tel:(888)888-8888">(888)888-8888</a>
+                </div>
+            </div>
+            <div class="top-footer-container2">
+                <a href="./index.html">Home</a>
+                <a href="./inventory.html">Inventory</a>
+                <a href="./about.html">About Us</a>
+                <a href="./appointment.html">Appointments</a>
+                <a href="./contact.html">Contact Us</a>
+            </div>
+        </section>
+        <section class="bottom-footer-section">
+            <div class="bottom-footer-container">
+                <p>&copy;2023 King's Motors - All Rights Reserved</p>
+            </div>
+            <div class="bottom-footer-container">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+        </section>
+    </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="js/main.js" ></script>
+    <script>
+
+    let buyCarBtns = document.querySelectorAll('.buy-car')
+    
+    buyCarBtns.forEach((carBtn) => {
+        carBtn.addEventListener('click', () => {
+            window.location.href = 'checkout.html'
+        });
+    });
+    </script>
 </body>
 </html>

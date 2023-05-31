@@ -111,7 +111,6 @@ body {
     color: var(--red);
 }
 
-
 .hamburger, .close-hamburger{
     display: none;
 }
@@ -122,13 +121,13 @@ body {
     color: var(--white);
 }
 
-.cart-number {
-    position: absolute;
+.material-symbols-outlined:hover {
     color: var(--red);
-    font-size: 1.6rem;
-    font-weight: 700;
 }
 
+.active {
+    color: var(--red);
+}
 
 /******************************************
 /* Hero Section
@@ -197,9 +196,10 @@ body {
     font-size: 2.4rem;
 }
 
-.hero-text-container button {
+.hero-text-container a {
     font-size: 1.2rem;
     padding: 1.4rem 5.4rem;
+    text-decoration: none;
     background: var(--green);
     color: var(--white);
     border: none;
@@ -207,7 +207,7 @@ body {
     border-radius: 5px;
 }
 
-.hero-text-container button:hover {
+.hero-text-container a:hover {
     background: var(--pink);
 }
 
@@ -369,7 +369,7 @@ body {
 }
 
 /******************************************
-/* Hero Section
+/* models container
 /*******************************************/
 
 .models-container {
@@ -435,17 +435,18 @@ body {
     font-size: 2.4rem;
 }
 
-.models-text-container button {
+.models-text-container a {
     font-size: 1.2rem;
     padding: 1.4rem 5.4rem;
     background: var(--green);
     color: var(--white);
+    text-decoration: none;
     border: none;
     outline: none;
     border-radius: 5px;
 }
 
-.models-text-container button:hover {
+.models-text-container a:hover {
     background: var(--pink);
 }
 
@@ -456,7 +457,6 @@ body {
 .details {
     width: 100%;
     padding: 100px 0;
-    background: var(--whitesmoke);
 }
 
 .details h3 {
@@ -499,17 +499,114 @@ body {
     padding-bottom: 20px;
 }
 
-.details-box  button {
+.details-box  a {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--white);
     background: var(--turquoise);
+    text-decoration: none;
     padding: 8px 16px;
     outline: none;
     border: solid 1px var(--white);
     border-radius: 4px;
 }
 
-.details-box  button:hover {
+.details-box  a:hover {
     background: var(--pink);
+}
+
+/******************************************
+/* Footer
+/*******************************************/
+
+.footer {
+    width: 100%;
+    background: var(--green);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.top-footer-section {
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--black);
+}
+
+.top-footer-container1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    padding: 20px 0;
+    width: 100px;
+    height: 100px;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-contacts a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.6rem;
+}
+
+.top-footer-container2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.top-footer-container2 a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.6rem;
+}
+
+.top-footer-container2 a:hover {
+    color: var(--red);
+}
+
+.bottom-footer-section {
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.bottom-footer-container p {
+    font-size: 1.2rem;
+    color: var(--red);
+}
+
+.bottom-footer-container ion-icon {
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 10px;
+}
+
+.bottom-footer-container ion-icon:hover {
+    color: var(--red);
 }

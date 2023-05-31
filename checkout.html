@@ -44,9 +44,8 @@
                 <ion-icon class="hamburger" name="layers-outline"></ion-icon>
                 <a class="nav-list-btn" href="./contact.html">Contact Us!</a>
             </div>
-            <a class="cart" href="./checkout.html">
+            <a class="cart active" href="./checkout.html">
                 <span class="material-symbols-outlined">garage</span>
-                <span class="cart-number cart-active">!</span>
             </a>
         </nav>
     </header>
@@ -57,48 +56,35 @@
                 <p>The King's Motors showroom experience - now in your own home. To continue shopping for your King's Classic Car online, please provide some additional information.</p>
                 <form class="checkout-form">
                     <label>First Name <br>
-                        <input type="text" name="name" placeholder="First Name">
+                        <input type="text" name="name" placeholder="First Name" required>
                     </label>
                     <label>Last Name <br>
-                        <input type="text" name="name" placeholder="Last Name">
+                        <input type="text" name="name" placeholder="Last Name" required>
                     </label>
                     <label>Street Address <br>
-                        <input type="text" name="name" placeholder="Street Address">
+                        <input type="text" name="name" placeholder="Street Address" required>
                     </label>
                     <label>Town/City<br>
-                        <input type="text" name="name" placeholder="City">
+                        <input type="text" name="name" placeholder="City" required>
                     </label>
                     <label>State<br>
-                        <input type="text" name="name" placeholder="State">
+                        <input type="text" name="name" placeholder="State" required>
                     </label>
                     <label>Zip Code<br>
-                        <input type="text" name="name" inputmode="numeric" placeholder="Zip Code">
+                        <input type="text" name="name" inputmode="numeric" placeholder="Zip Code" required>
                     </label>
                     <label>Country<br>
-                        <input type="text" name="name" placeholder="Country">
+                        <input type="text" name="name" placeholder="Country" required>
                     </label>
                     <label>Phone Number<br>
-                        <input type="tel" name="number"  inputmode="numeric" placeholder="Phone Number">
+                        <input type="tel" name="number"  inputmode="numeric" placeholder="Phone Number" required>
                     </label>
                     <label>Email<br>
-                        <input type="email" name="email" inputmode="email" placeholder="Email Address">
+                        <input type="email" name="email" inputmode="email" placeholder="Email Address" required>
                     </label>
-                    <input type="submit" class="btn-submit" id="button-submit" value="Submit">
+                    <input type="submit" class="btn-submit" id="button-submit" value="Submit" required>
                     <p>We respect your privacy. When you submit your contact information, we agree to only contact you in accordance with our Privacy Policy.</p>
-
-                    <section class="submit-container">
-                        <div class="submit-pop-up">
-                            <img src="./images/vintage-fonz.webp" alt="The Fonz">
-                            <div class="pop-up-text">
-                                <h1>Request Submitted</h1>
-                                <p>The Fonz says "Hey, I'm the Fonz. I know everybody."</p>
-                                <span class="close">Close</span>
-                            </div>
-                        </div>
-                    </section>
-
-
-                </form>
+                </form>  
             </div>
         </section>
         <section class="checkout-image-container">
@@ -110,13 +96,75 @@
             </div>
         </section>
     </main>
+    <section class="submit-pop-up-container">
+        <div class="submit-pop-up">
+            <img src="./images/red-car.gif" alt="red car">
+            <div class="pop-up-text">
+                <h1>Request Submitted</h1>
+                <p>We will be in contact with you shortly. We can't wait to deliver your "NEW" Classic Car!</p>
+                <div class="close-button-container">
+                    <button id="close-button" class="close">Close</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <section class="top-footer-section">
+            <div class="top-footer-container1">
+                <div class="footer-logo">
+                    <img src="./images/king-motors-logo-removebg-preview.png" alt="logo">
+                </div>
+                <div class="footer-contacts">
+                    <a href="mailto:kingmotors@email.com">kingmotors@email.com</a>
+                    <a href="tel:(888)888-8888">(888)888-8888</a>
+                </div>
+            </div>
+            <div class="top-footer-container2">
+                <a href="./index.html">Home</a>
+                <a href="./inventory.html">Inventory</a>
+                <a href="./about.html">About Us</a>
+                <a href="./appointment.html">Appointments</a>
+                <a href="./contact.html">Contact Us</a>
+            </div>
+        </section>
+        <section class="bottom-footer-section">
+            <div class="bottom-footer-container">
+                <p>&copy;2023 King's Motors - All Rights Reserved</p>
+            </div>
+            <div class="bottom-footer-container">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+        </section>
+    </footer>
 
 
 
 
 
 
+<script>
+    let checkOutForm = document.querySelector('.checkout-form')
+    let submitButton= document.getElementById('button-submit')
+    let submitContainer = document.querySelector('.submit-pop-up-container')
+    let closeButton = document.getElementById('close-button');
+    closeButton.addEventListener('click', () => {
+        submitContainer.style.display = "none";
+        localStorage.removeItem('selectedCarImage')
+        localStorage.removeItem('selectedCarName')
+        localStorage.removeItem('selectedCarPrice')
+        location.reload()
+    })
 
+    checkOutForm.addEventListener('submit',(event) => {
+        event.preventDefault();
+        // netlify website form handler
+        submitContainer.style.display = "flex";
+        checkOutForm.reset();
+    })
+
+</script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="js/main.js" ></script>
