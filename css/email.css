@@ -27,20 +27,20 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
-    padding: 50px 120px;
+    padding: 50px;
     margin: 50px;
     border: 1px solid var(--pink);
     border-radius: 8px;
 }
 
 .email-form h2 {
-    font-size: 2.2rem;
+    font-size: var(--heading);
     color: var(--black);
     margin-bottom: 20px;
 }
 
 .email-form small {
-    font-size: 1.2rem;
+    font-size: var(--paragraph);
     font-weight: 200;
     color: var(--black);
 }

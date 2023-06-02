@@ -9,6 +9,9 @@
     --ghostwhite: ghostwhite;
     --whitesmoke: whitesmoke;
     --max-width: 1700px;
+    --heading: 4.8rem;
+    --sub-heading: 3.6rem;
+    --paragraph: 1.5rem;
 }
 
 /* Box Model Hack */
@@ -62,6 +65,7 @@ body {
     position: sticky;
     top: 0;
     background: var(--green);
+    z-index: 100;
 }
 
 .navigation {
@@ -473,6 +477,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 0 20px;
 }
 
 .details-box {
@@ -522,8 +527,7 @@ body {
 .footer {
     width: 100%;
     background: var(--green);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     margin-top: 20px;
 }
 
@@ -610,3 +614,36 @@ body {
 .bottom-footer-container ion-icon:hover {
     color: var(--red);
 }
+
+/******************************************
+/* Media Queries
+/*******************************************/
+
+@media screen and (max-width:1200px) {
+    
+    .nav-menu {
+        width: 100%;
+    }
+    
+    .details-container {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    
+}
+
+@media screen and (max-width:768px) {
+    
+}
+
+@media screen and (max-width:480px) {
+    
+}
+
+@media screen and (max-width:360px) {
+    
+}
+

@@ -27,12 +27,12 @@
 }
 
 .checkout-container h1 {
-    font-size: 2.2rem;
+    font-size: var(--sub-heading);
     color: var(--black);
 }
 
 .checkout-container p {
-    font-size: 1.2rem;
+    font-size: var(--paragraph);
     color: var(--black);
 }
 

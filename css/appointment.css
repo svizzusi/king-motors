@@ -27,20 +27,20 @@
     justify-content: flex-end;
     align-items: center;
     padding-bottom: 50px;
-    padding: 50px 120px;
+    padding: 50px;
     margin: 50px;
     border: 1px solid var(--pink);
     border-radius: 8px;
 }
 
 .appointment-form h2 {
-    font-size: 2.2rem;
+    font-size: var(--sub-heading);
     color: var(--black);
     margin-bottom: 20px;
 }
 
 .appointment-form small {
-    font-size: 1.2rem;
+    font-size: var(--paragraph);
     font-weight: 200;
     color: var(--black);
 }
