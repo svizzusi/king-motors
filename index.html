@@ -14,6 +14,8 @@
     <!-- Search Engine-->
     <meta name="author" content="Stephen Vizzusi">     
     <title>King Motors</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,19 +33,21 @@
                 </a>
             </div>
             <div class="nav-menu">
-                <ul class="nav-list">
-                    <li><a class="active" href="./index.html">Home</a></li>
-                    <li><a href="./inventory.html">Inventory</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="./appointment.html">Appointments</a></li>
-                </ul>
-                <ion-icon class="close-hamburger" name="close-outline"></ion-icon>
-                <ion-icon class="hamburger" name="layers-outline"></ion-icon>
-                <a class="nav-list-btn" href="./contact.html">Contact Us!</a>
+                <div class="nav-list">
+                    <a class="active" href="./index.html">Home</a>
+                    <a href="./inventory.html">Inventory</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./appointment.html">Appointments</a>
+                    <a class="nav-list-btn" href="./contact.html">Contact Us!</a>
+                </div>
+                <div class="hamburger">
+                    <span class="material-symbols-outlined openham">menu</span>
+                    <span class="material-symbols-outlined closeham">close</span>
+                </div>
+                <a class="cart" href="./checkout.html">
+                    <span class="material-symbols-outlined">garage</span>
+                </a>
             </div>
-            <a class="cart" href="./checkout.html">
-                <span class="material-symbols-outlined">garage</span>
-            </a>
         </nav>
     </header>
     <main>
@@ -62,9 +66,7 @@
                     class="f-container"  
                     data-aos="fade-zoom-in"
                     data-aos-easing="ease-in-back"
-                    data-aos-delay="300"
-                    data-aos-offset="0"
-                    data-aos-duration="4000">
+                    data-aos-duration="1000">
                     <div class="f-container-overlay">
                         <article class="f-text-container">
                             <h3>1952 Ford F150</h3>
@@ -77,9 +79,7 @@
                     class="f-container"  
                     data-aos="fade-zoom-in"
                     data-aos-easing="ease-in-back"
-                    data-aos-delay="300"
-                    data-aos-offset="0"
-                    data-aos-duration="4000">
+                    data-aos-duration="1000">
                     <div class="f-container-overlay">
                         <article class="f-text-container">
                             <h3>1957 Chevrolet Bel Air</h3>
@@ -92,9 +92,7 @@
                     class="f-container"  
                     data-aos="fade-zoom-in"
                     data-aos-easing="ease-in-back"
-                    data-aos-delay="300"
-                    data-aos-offset="0"
-                    data-aos-duration="4000">
+                    data-aos-duration="1000">
                     <div class="f-container-overlay">
                         <article class="f-text-container">
                             <h3>1958-apache</h3>
@@ -107,9 +105,7 @@
                     class="f-container"  
                     data-aos="fade-zoom-in"
                     data-aos-easing="ease-in-back"
-                    data-aos-delay="300"
-                    data-aos-offset="0"
-                    data-aos-duration="4000">
+                    data-aos-duration="1000">
                     <div class="f-container-overlay">
                         <article class="f-text-container">
                             <h3>1971 Ford Bronco</h3>
@@ -151,7 +147,7 @@
         <section class="models-container">
             <div class="models-dark-overlay">
                 <div class="models-text-container">
-                    <h3>TIMELESS CLASSICS FOR YOUR UNIQUE STYLE</h3>
+                    <h2>TIMELESS CLASSICS FOR YOUR UNIQUE STYLE</h2>
                     <small>UNCOVER OUR LINEUP</small>
                     <a href="./about.html">Learn More</a>
                 </div>
@@ -221,5 +217,6 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="js/main.js" ></script>
+    <script src="js/nav.js"></script>
 </body>
 </html>

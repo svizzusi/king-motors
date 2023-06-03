@@ -112,3 +112,131 @@
     background: rgba(0,0,0,0.1);
     padding: 15px 40px;
 }
+
+/******************************************
+/* Media Queries
+/*******************************************/
+
+@media screen and (max-width:1700px) {
+    .nav-menu {
+        width: 100%;
+    }
+    .email-section {
+        padding: 50px;
+    }
+    .email-form h2 {
+        font-size: 2.4rem;
+    }
+   
+    .email-form small {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:1200px) {
+    .nav-menu {
+        width: 100%;
+    }
+    .email-container {
+        height: 1200px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .email-form {
+        width: 100%;
+        height: 700px;
+    }
+
+    .email-section {
+        padding: 50px;
+    }
+    .email-form h2 {
+        font-size: 2.4rem;
+        margin-bottom: 10px;
+    }
+    
+    .email-form small {
+        font-size: 1.6rem;
+
+    }
+    .email-image-section p {
+        display: none;
+    }
+    .email-image-section {
+        width: 100%;
+        height: 500px;
+        justify-content: flex-start;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+
+}
+
+@media screen and (max-width:960px) {
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+    }
+
+    .closeham {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: var(--green);
+        padding: 20px;
+        border-radius: 0 0 0 8px;
+    }
+
+}
+@media screen and (max-width:768px) {
+    .email-form h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .email-form small {
+        font-size: 1.2rem;
+
+    }
+}
+
+@media screen and (max-width:635px) {
+    .email-image-section {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .email-image-section {
+        height: 200px;
+    }
+    .email-form h2 {
+        font-size: 1.2rem;
+    }
+    
+    .email-form small {
+        font-size: 1rem;
+
+    }
+    .footer-contacts a{
+        font-size: 1.2rem;
+    }
+    .bottom-footer-container p {
+        font-size: 1rem;
+        width: 100px;
+    }
+    .bottom-footer-container ion-icon {
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+}
