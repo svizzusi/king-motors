@@ -14,7 +14,9 @@
     <link rel="icon" type="image/png" href="./images/king-motors-logo.webp" sizes="10x10">
     <!-- Search Engine-->
     <meta name="author" content="Stephen Vizzusi">
-        
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     <title>King Motors</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -145,35 +147,9 @@
             </div>
         </section>
     </footer>
-
-
-
-
-
-
-<script>
-    let checkOutForm = document.querySelector('.checkout-form')
-    let submitButton= document.getElementById('button-submit')
-    let submitContainer = document.querySelector('.submit-pop-up-container')
-    let closeButton = document.getElementById('close-button');
-    closeButton.addEventListener('click', () => {
-        submitContainer.style.display = "none";
-        localStorage.removeItem('selectedCarImage')
-        localStorage.removeItem('selectedCarName')
-        localStorage.removeItem('selectedCarPrice')
-        location.reload()
-    })
-
-    checkOutForm.addEventListener('submit',(event) => {
-        event.preventDefault();
-        // netlify website form handler
-        submitContainer.style.display = "flex";
-        checkOutForm.reset();
-    })
-
-</script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/checkout.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="js/main.js" ></script>
 <script src="js/nav.js"></script>
 </body>

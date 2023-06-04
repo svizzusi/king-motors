@@ -137,7 +137,7 @@
         width: 100%;
     }
     .email-container {
-        height: 1200px;
+        height: fit-content;
         flex-direction: column;
         justify-content: flex-start;
     }
@@ -170,11 +170,6 @@
     }
 }
 
-@media screen and (max-width:1024px) {
-
-
-}
-
 @media screen and (max-width:960px) {
 
     .hamburger {
@@ -199,6 +194,9 @@
 
 }
 @media screen and (max-width:768px) {
+    .email-section {
+        margin: 0;
+    }
     .email-form h2 {
         font-size: 2rem;
         margin-bottom: 10px;
@@ -223,7 +221,9 @@
     .email-form h2 {
         font-size: 1.2rem;
     }
-    
+    .email-section {
+        padding: 0 16px;
+    }
     .email-form small {
         font-size: 1rem;
 

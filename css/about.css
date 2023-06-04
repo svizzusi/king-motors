@@ -113,6 +113,11 @@
     .about-social ion-icon {
         font-size: 1rem;
     }
+    .about-hero-image-container {
+        height: 400px;
+        margin: auto;
+        margin-right: 50px;
+    }
 }
 
 
@@ -168,12 +173,26 @@
 }
 @media screen and (max-width:768px) {
     .about-hero-container{
-        height: 1000px;
+        height: fit-content;
+    }
+    .about-hero-image-container {
+        height: 300px;
+        margin: 40px 0;
     }
 }
 
 @media screen and (max-width:480px) {
-
+    .about-hero-container {
+        height: fit-content;
+        padding: 16px;
+    }
+    .about-hero-text {
+        padding: 40px 20px;
+        margin: 0;
+    }
+    .about-hero-image-container {
+        height: 200px;
+    }
     .footer-contacts a{
         font-size: 1.2rem;
     }

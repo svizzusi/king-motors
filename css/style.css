@@ -237,6 +237,7 @@ body {
 .f-container {
     width: 700px;
     height: 49vh;
+    border-radius: 8px;
 }
 .f-container:nth-of-type(1) {
     background-image: url(../images/1952-ford-f150.webp);
@@ -727,8 +728,30 @@ body {
 }
 
 @media screen and (max-width:480px) {
+    .navigation {
+        padding: 20px 0;
+    }
+    .cart {
+        padding: 0;
+    }
+    section.fantastic-four {
+        padding: 0 16px;
+    }
+    .f-text-container p {
+        font-size: 2.8rem;
+        padding-bottom: 10px;
+    }
     .f-container {
         height: 32vh;
+    }
+    div.car-show {
+        margin: 0 16px;
+    }
+    .car-show-section {
+        padding-top: 0px;
+    }
+    .footer {
+        padding: 20px 16px;
     }
     .footer-contacts a{
         font-size: 1.2rem;
@@ -763,9 +786,15 @@ body {
     .f-text-container a {
         font-size: .8rem;
     }
+    .car-show > a {
+        font-size: 1.4rem;
+    }
 }
 
 @media screen and (max-width:360px) {
+    .car-show > a {
+        font-size: 1.2rem;
+    }
     .f-container {
         height: 20vh;
     }
