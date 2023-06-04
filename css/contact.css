@@ -39,7 +39,7 @@
     color: var(--black);
 }
 
-.contact-box span a {
+.contact-box div a {
     color: var(--black);
     font-size: 1.6rem;
 }
@@ -99,6 +99,10 @@
     .nav-menu {
         width: 100%;
     }
+    .contact-details {
+        width: 40%;
+        gap: 20px;
+    }
     .contact-box span a {
     font-size: 1.2rem;
     }
@@ -122,6 +126,14 @@
     .contact-social ion-icon {
         font-size: 1.6rem;
     }
+
+}
+
+@media screen and (max-width:1200px) {
+    .contact-details {
+        width: 50%;
+        gap: 10px;
+    }
 }
 
 @media screen and (max-width:1024px) {
@@ -138,7 +150,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
+        gap: 30px;
         padding: 50px; 
     }
     .contact-map {
@@ -173,14 +185,17 @@
 
 }
 @media screen and (max-width:768px) {
-
-}
-
-@media screen and (max-width:635px) {
-
+    .contact-details {
+        gap: 20px;
+        padding: 20px;
+    }
 }
 
 @media screen and (max-width:480px) {
+    
+    .contact-box div small + span {
+        font-size: 1.0rem;
+    }
     .contact-box span a {
         font-size: 1.0rem;
     }
@@ -196,7 +211,7 @@
     .contact-box div small + span a {
         font-size: 1rem;
     }
-
+    
     .contact-box div address {
         font-size: 1rem;
     }
@@ -204,6 +219,18 @@
     .contact-social ion-icon {
         font-size: 1rem;
     }
+
+    .contact-details {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .contact-map {
+        width: 100%;
+        height: 200px;
+        margin: 10px;
+    }
+
     .footer-contacts a{
         font-size: 1rem;
     }

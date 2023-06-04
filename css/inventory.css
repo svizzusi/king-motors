@@ -408,6 +408,17 @@
         z-index: 5;
         height: 600px;
     }
+    .inventory-details h2 {
+        font-size: 1.8rem;
+    }
+    
+    .inventory-details p {
+        font-size: 1rem;
+    }
+    
+    .inventory-details small{
+        font-size: 1.2rem;
+    }
     
     .inventory-imgage-container {
         width: 100%;

@@ -236,7 +236,7 @@ body {
 
 .f-container {
     width: 700px;
-    height: 47vh;
+    height: 49vh;
 }
 .f-container:nth-of-type(1) {
     background-image: url(../images/1952-ford-f150.webp);
@@ -661,7 +661,6 @@ body {
         padding: 20px;
         border-radius: 0 0 0 8px;
     }
-
 }
 
 @media screen and (max-width:768px) {
@@ -678,9 +677,59 @@ body {
     .models-text-container small {
         font-size: 1.8rem;
     }
+    
+    .fantastic-four {
+        gap: 30px;
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .f-container {
+        width: 100%;
+        height: 44vh;
+    }
+    .f-container:nth-of-type(1) {
+        background-position: right;
+    }
+    .f-container:nth-of-type(3) {
+        background-position: bottom left;
+    }
+    .f-text-container h3 {
+        font-size: 1.2rem;
+    }
+    
+    .f-text-container p {
+        font-size: 2.4rem;
+    }
+    
+    .f-text-container a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .f-container {
+        height: 42vh;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .f-container {
+        height: 38vh;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .f-container {
+        height: 35vh;
+    }
 }
 
 @media screen and (max-width:480px) {
+    .f-container {
+        height: 32vh;
+    }
     .footer-contacts a{
         font-size: 1.2rem;
     }
@@ -694,7 +743,43 @@ body {
     }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:450px) {
+    .f-container {
+        height: 28vh;
+    }
+}
+@media screen and (max-width:410px) {
+    .f-container {
+        height: 24vh;
+    }
+    .f-text-container h3 {
+        font-size: 1rem;
+    }
+    
+    .f-text-container p {
+        font-size: 1.6rem;
+    }
+    
+    .f-text-container a {
+        font-size: .8rem;
+    }
+}
 
+@media screen and (max-width:360px) {
+    .f-container {
+        height: 20vh;
+    }
+    .f-text-container h3 {
+        font-size: .8rem;
+    }
+    
+    .f-text-container p {
+        font-size: 1.2rem;
+        padding-bottom: 5px;
+    }
+    
+    .f-text-container a {
+        font-size: .6rem;
+    }
 }
 
