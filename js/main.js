@@ -180,38 +180,3 @@ const displayCars = cars.map((car, index) => {
     inventoryCarPrice.textContent = '$' + car.price
 })
 
-
-
-
-// pop-up variables
-
-// let submitButton= document.getElementById('button-submit')
-// let submitContainer = document.querySelector('.submit-pop-up-container')
-// let closeButton = document.getElementById('close-button')
-
-// closeButton.addEventListener('click', () => {
-//     submitContainer.style.display = "none";
-//     alert('You have clicked the submit button') 
-// });
-
-// // on click of the background it will closes the pop up or modal
-// submitContainer.addEventListener('click', function() {
-//     submitContainer.style.display = "none";
-// });
-
-
-// // on click of the model button, show model
-// submitButton.addEventListener('click', function() {
-//     submitContainer.style.display = "flex";
-// });
-
-// on click of the close button, hide model
-
-// closeButton.addEventListener('click', function() {
-//     submitContainer.style.display = "none";
-// });
-
-// // on click of the background it will closes the pop up or modal
-// submitContainer.addEventListener('click', function() {
-//     submitContainer.style.display = "none";
-// });
