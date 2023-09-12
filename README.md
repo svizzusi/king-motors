@@ -62,7 +62,7 @@ Contributions to the King Motors website project are welcome. If you'd like to c
 
 ## License
 
-The King Motors E-Commerce website is open-source and available under the MIT License. Feel free to use, modify, and distribute it according to the terms of the license.
+The King Motors E-Commerce website is a personal project and not open-source. All rights are reserved.
 
 Thank you for visiting King Motors! We hope you enjoy exploring our collection of classic cars and experiencing our exciting features. If you have any questions or feedback, please don't hesitate to [contact us](mailto:contact@kingmotors.com).
 You can now easily copy and paste this Markdown content into your GitHub README.
